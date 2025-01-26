@@ -6,11 +6,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\..\akkanet\src\core\Akka.Persistence\Akka.Persistence.csproj" />
         <ProjectReference Include="..\Akka.Hosting\Akka.Hosting.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Akka.Persistence" Version="$(AkkaVersion)" />
-    </ItemGroup>
+<!--    <ItemGroup>-->
+<!--        <PackageReference Include="Akka.Persistence" Version="$(AkkaVersion)" />-->
+<!--    </ItemGroup>-->
 
 </Project>

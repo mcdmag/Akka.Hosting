@@ -8,10 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\akkanet\src\core\Akka.Remote\Akka.Remote.csproj" />
     <ProjectReference Include="..\Akka.Hosting\Akka.Hosting.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Akka.Remote" Version="$(AkkaVersion)" />
-  </ItemGroup>
+<!--  <ItemGroup>-->
+<!--    <PackageReference Include="Akka.Remote" Version="$(AkkaVersion)" />-->
+<!--  </ItemGroup>-->
 </Project>

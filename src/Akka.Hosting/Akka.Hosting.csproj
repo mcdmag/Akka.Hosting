@@ -6,10 +6,15 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Akka.DependencyInjection" Version="$(AkkaVersion)" />
-    <PackageReference Include="Akka.Streams" Version="$(AkkaVersion)" />
+<!--    <PackageReference Include="Akka.DependencyInjection" Version="$(AkkaVersion)" />-->
+<!--    <PackageReference Include="Akka.Streams" Version="$(AkkaVersion)" />-->
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\akkanet\src\contrib\dependencyinjection\Akka.DependencyInjection\Akka.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\..\akkanet\src\core\Akka.Streams\Akka.Streams.csproj" />
   </ItemGroup>
 </Project>

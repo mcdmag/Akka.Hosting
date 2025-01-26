@@ -6,12 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\akkanet\src\contrib\cluster\Akka.Cluster.Sharding\Akka.Cluster.Sharding.csproj" />
     <ProjectReference Include="..\Akka.Persistence.Hosting\Akka.Persistence.Hosting.csproj" />
     <ProjectReference Include="..\Akka.Remote.Hosting\Akka.Remote.Hosting.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Akka.Cluster.Sharding" Version="$(AkkaVersion)" />
-    <PackageReference Include="Akka.DistributedData" Version="$(AkkaVersion)" />
-  </ItemGroup>
+<!--  <ItemGroup>-->
+<!--&lt;!&ndash;    <PackageReference Include="Akka.Cluster.Sharding" Version="$(AkkaVersion)" />&ndash;&gt;-->
+<!--    <PackageReference Include="Akka.DistributedData" Version="$(AkkaVersion)" />-->
+<!--  </ItemGroup>-->
 </Project>
